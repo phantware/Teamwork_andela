@@ -4,7 +4,9 @@
   "description": "Andela Team work project",
   "main": "script.js",
   "scripts": {
-    "start": "nodemon script.js"
+    "start": "nodemon script.js",
+    "prefix": "eslint . --fix",
+    "fix": "prettier-eslint script.js --write "
   },
   "repository": "https://github.com/phantware/Teamwork_andela.git",
   "author": "Ismail Jamiu Babatunde <phantmoney2011@gmail.com>",
@@ -15,16 +17,18 @@
     "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "eslint": "^6.8.0",
+    "eslint": "6.4.0",
     "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^4.0.1",
+    "lint-staged": "^10.0.0-beta.15",
     "prettier": "^1.19.1",
     "prettier-eslint": "^9.0.1",
-    "prettier-eslint-cli": "^5.0.0",
-    "eslint-config-prettier": "^6.9.0",
-    "eslint-plugin-prettier": "^3.1.2"
+    "prettier-eslint-cli": "^5.0.0"
   }
 }
