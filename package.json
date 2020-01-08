@@ -2,11 +2,12 @@
   "name": "Teamwork_andela",
   "version": "1.0.0",
   "description": "Andela Team work project",
-  "main": "script.js",
+  "main": "app.js",
   "scripts": {
-    "start": "nodemon script.js",
-    "prefix": "eslint . --fix",
-    "fix": "prettier-eslint script.js --write "
+    "prefix": "eslint --fix",
+    "fix": "prettier-eslint --write ",
+    "start": "node app.js",
+    "start:dev": "nodemon -x \"babel-node app.js\" "
   },
   "repository": "https://github.com/phantware/Teamwork_andela.git",
   "author": "Ismail Jamiu Babatunde <phantmoney2011@gmail.com>",
@@ -18,6 +19,9 @@
   },
   "devDependencies": {
     "eslint": "6.4.0",
+    "@babel/core": "^7.7.7",
+    "@babel/node": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.9.0",
     "eslint-plugin-import": "^2.19.1",
