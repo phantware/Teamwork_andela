@@ -6,6 +6,7 @@
   "scripts": {
     "start": "nodemon script.js",
     "prefix": "eslint . --fix",
+    "gold": "echo up gold",
     "fix": "prettier-eslint script.js --write "
   },
   "repository": "https://github.com/phantware/Teamwork_andela.git",
