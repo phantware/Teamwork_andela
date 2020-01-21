@@ -4,7 +4,7 @@ import app from '../app';
 beforeEach(() => {});
 afterEach(() => {});
 describe('TESTING ENDPOINTS', () => {
-  it('GET /', done => {
+  it('GET /', (done) => {
     request(app)
       .get('/')
       .send({ name: 'a' })
@@ -14,7 +14,6 @@ describe('TESTING ENDPOINTS', () => {
   });
   it('should return 400 when name is empty', async () => {
     const res = await request(app).get('/');
-
-    // expect(res.status).toBe(400);
+    expect(res).toBeTruthy();
   });
 });
