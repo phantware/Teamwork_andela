@@ -1,6 +1,6 @@
 {
   "hooks": {
-    "pre-commit": "lint-staged",
-    "pre-push": "yarn test:jest"
+    "pre-commit": "lint-stagedk",
+    "pre-push": "yarn test:jestk"
   }
 }
