@@ -10,16 +10,19 @@
     "prefix": "eslint --fix",
     "fix": "prettier-eslint --write ",
     "start": "node server.js",
-    "start:dev": "nodemon -x \"babel-node server.js\" "
+    "start:dev": "nodemon -x babel-node server.js",
+    "start:pg": "nodemon  playground/pg.js"
   },
   "repository": "https://github.com/phantware/Teamwork_andela.git",
   "author": "Ismail Jamiu Babatunde <phantmoney2011@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
+    "@hapi/joi": "^17.1.0",
     "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "pg": "^7.17.1"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
@@ -40,6 +43,7 @@
     "husky": "^4.0.1",
     "jest": "^24.9.0",
     "lint-staged": "^10.0.0-beta.15",
+    "nodemon": "^2.0.2",
     "prettier": "^1.19.1",
     "prettier-eslint": "^9.0.1",
     "prettier-eslint-cli": "^5.0.0",
